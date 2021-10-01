@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste com imagens</title>
+    <style>
+        img.img {
+            width: 80px;
+            border-radius: 0px;
+            margin: 20px 20px;
+            max-width: 80px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Testando carga de imagens</h1>
+    <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
+    <img src="logo-html.png" alt="Logo HTML5">
+    <p>Podemos também carregar imagens que estão em subPastas</p>
+    <img src="imagens/logo-css.png" alt="Logo CSS3">
+    <p>Também podemos carregar imagens externas</p>
+    <img class="img" id="logoJS" onmouseover="teste2()" onmouseout="sair2()" src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="Logo JavaScript">
+    <img class="img" id="logojs" onmousemove="teste()" onmouseout="sair()" src="https://b.thumbs.redditmedia.com/8RJ1zsSxLbTrSrRAhziwMynfkWVcuFNMXPsLqtGct1o.png" alt="">
+    
+    
+    <script>
+        function teste() {
+            //alert('teste')
+            var logo = document.getElementById('logojs')
+            var tam = logo.width
+            //alert(tam)
+            //logo.style.width = (tam + 10) + 'px'
+            logo.style.borderRadius='70px'
+            
+           
+        }
+
+        function teste2() {
+            //alert('teste')
+            var logo = document.getElementById('logoJS')
+            var tam = logo.width
+            //alert(tam)
+            //logo.style.width = (tam + 10) + 'px'
+            logo.style.borderRadius='70px'
+            
+           
+        }
+
+        function sair() {
+            var logo = document.getElementById('logojs')
+            logo.style.width= '80px'
+            logo.style.borderRadius='0px'
+        }
+
+        function sair2() {
+            var logo = document.getElementById('logoJS')
+            logo.style.width= '80px'
+            logo.style.borderRadius='0px'
+            
+        }
+
+    </script>
+</body>
+</html>

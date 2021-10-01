@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('fonts/love larry ttf.ttf') format('truetype');
+
+            /* 
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Appe Advanced Typography)
+            - svg
+            */
+
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'harry';
+            src: url('fonts/HARRYP.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+
+        h1 {
+            font-family: 'love','Times New Roman', Times, serif;
+            font-size: 5em;
+            /*color: rgb(221, 29, 77);
+            texto gradiente foi adicionado olhando na internet fora do curso
+            */
+            background: -webkit-linear-gradient( rgb(218, 9, 72),rgb(114, 13, 52));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Tatyanne</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloribus possimus! Recusandae illo rem perferendis fugiat ratione expedita nobis voluptatum cumque quia fugit, eum, deleniti id quisquam nihil non a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rem modi culpa, vero nisi tempora. Ipsum dolores, sequi doloribus expedita quis vero aperiam nihil, rem nisi, eum similique! Quam, quos.</p>
+</body>
+</html>
